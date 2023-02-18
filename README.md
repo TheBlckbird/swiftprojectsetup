@@ -1,1 +1,2 @@
-# This is my extension for initializing a swift package
+# swiftprojectsetup
+This is an extension for VSCode to initialize a new Swift Package with the type executable.  

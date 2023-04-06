@@ -2,6 +2,14 @@
   "name": "swiftprojectsetup",
   "displayName": "SwiftProjectSetup",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheBlckbird/swiftprojectsetup"
+  },
+  "bugs": {
+    "url": "https://github.com/TheBlckbird/swiftprojectsetup/issues"
+  },
+  "license": "MIT",
   "version": "0.1.1",
   "engines": {
     "vscode": "^1.73.0"
@@ -36,7 +44,6 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-
     "vscode:prepublish": "npm run esbuild-base -- --minify",
     "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run esbuild-base -- --sourcemap",
